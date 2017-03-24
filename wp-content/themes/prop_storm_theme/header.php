@@ -15,20 +15,24 @@
 </head>
 
 <body <?php body_class(); ?>>
-
-<div class="blog-masthead">
-    <div class="container">
-        <nav class="blog-nav">
-            <a class="blog-nav-item active" href="#">Home</a>
-            <a class="blog-nav-item" href="#">New features</a>
-            <a class="blog-nav-item" href="#">Press</a>
-            <a class="blog-nav-item" href="#">New hires</a>
-            <a class="blog-nav-item" href="#">About</a>
-        </nav>
+  <div class="container">
+    <div class="row">
+  <nav class="navbar navbar-default col-sm-3" style="background-color:yellow;">
+    <div class="container-fluid propstorm-nav-container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Prop Storm</a>
+      </div>
+        <ul class="nav navbar-nav propstorm-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Stories</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
     </div>
-</div>
+  </nav>
 
-<div class="container">
+<div class="col-sm-9" style="background-color:#999";>
 
     <div class="blog-header">
         <h1 class="blog-title"><a href="<?php bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
