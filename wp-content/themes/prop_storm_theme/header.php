@@ -15,15 +15,15 @@
 </head>
 
 <body <?php body_class(); ?>>
-  <div class="container">
-    <div class="row">
-  <nav class="navbar navbar-default col-sm-3" style="background-color:yellow;">
+  <div class="container propstorm-container">
+    <div class="row propstorm-row">
+  <nav class="navbar navbar-default col-sm-3 propstorm-navbar">
     <div class="container-fluid propstorm-nav-container">
       <div class="navbar-header">
         <a class="navbar-brand" href="#">Prop Storm</a>
       </div>
-        <ul class="nav navbar-nav propstorm-nav">
-            <li class="active"><a href="#">Home</a></li>
+        <ul class="nav nav-pills nav-stacked propstorm-nav">
+            <li><a href="#">Home</a></li>
             <li><a href="#">Gallery</a></li>
             <li><a href="#">Stories</a></li>
             <li><a href="#">About</a></li>
@@ -32,11 +32,12 @@
     </div>
   </nav>
 
-<div class="col-sm-9" style="background-color:#999";>
+<div class="col-sm-9 content-area" style="background-color:#999";>
 
     <div class="blog-header">
         <h1 class="blog-title"><a href="<?php bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
         <p class="lead blog-description"><?php echo get_bloginfo( 'description' ); ?></p>
     </div>
+
 
     <div class="row">
