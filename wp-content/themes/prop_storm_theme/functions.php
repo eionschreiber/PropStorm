@@ -15,8 +15,13 @@ function propstorm_wp_setup() {
     add_theme_support( 'title-tag' );
 }
 
+function register_propstorm_menu(){
+  register_nav_menu("header-menu",__("Navbar Menu"));
+}
+
 add_action( 'after_setup_theme', 'propstorm_wp_setup' );
 add_action( 'wp_enqueue_scripts', 'propstorm_enqueue_styles' );
 add_action( 'wp_enqueue_scripts', 'propstorm_enqueue_scripts' );
+add_action( 'init', 'register_propstorm_menu' );
 
 ?>

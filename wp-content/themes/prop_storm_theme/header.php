@@ -23,12 +23,9 @@
         <a class="navbar-brand" href="#">Prop Storm</a>
       </div>
         <ul class="nav nav-pills nav-stacked propstorm-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Stories</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+          <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
         </ul>
+
     </div>
   </nav>
 
