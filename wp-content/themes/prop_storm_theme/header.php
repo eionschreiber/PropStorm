@@ -22,10 +22,7 @@
       <div class="navbar-header">
         <a class="navbar-brand" href="#">Prop Storm</a>
       </div>
-        <ul class="nav nav-pills nav-stacked propstorm-nav">
-          <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-        </ul>
-
+        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ,'menu_class' => 'nav nav-pills nav-stacked propstorm-nav') ); ?>
     </div>
   </nav>
 
@@ -35,6 +32,3 @@
         <h1 class="blog-title"><a href="<?php bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
         <p class="lead blog-description"><?php echo get_bloginfo( 'description' ); ?></p>
     </div>
-
-
-    <div class="row">

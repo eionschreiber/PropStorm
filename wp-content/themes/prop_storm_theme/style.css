@@ -71,10 +71,10 @@ h6, .h6 {
 }
 .propstorm-navbar{
   height: 100%;
+  text-align: center;
 }
 .propstorm-nav-container{
   display: inline-block;
-  position:fixed;
 
 }
 
