@@ -18,7 +18,18 @@ function propstorm_wp_setup() {
 function register_propstorm_menu(){
   register_nav_menu("header-menu",__("Navbar Menu"));
 }
+function theme_logo_setup() {
 
+	add_theme_support( 'custom-logo', array(
+		'height'      => 400,
+		'width'       => 400,
+    'flex-height' => true,
+    'flex-width'  => true,
+	) );
+
+}
+
+add_action( 'after_setup_theme', 'theme_logo_setup' );
 add_action( 'after_setup_theme', 'propstorm_wp_setup' );
 add_action( 'wp_enqueue_scripts', 'propstorm_enqueue_styles' );
 add_action( 'wp_enqueue_scripts', 'propstorm_enqueue_scripts' );

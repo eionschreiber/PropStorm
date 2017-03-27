@@ -19,10 +19,15 @@
     <div class="row propstorm-row">
   <nav class="navbar navbar-default col-sm-3 propstorm-navbar">
     <div class="container-fluid propstorm-nav-container">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">Prop Storm</a>
-      </div>
-        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ,'menu_class' => 'nav nav-pills nav-stacked propstorm-nav') ); ?>
+
+        <?php
+        if ( function_exists( 'the_custom_logo' ) ) {
+          the_custom_logo();
+          }
+        wp_nav_menu( array(
+          'theme_location' => 'header-menu',
+          'menu_class' => 'nav nav-pills nav-stacked propstorm-nav') );
+        ?>
     </div>
   </nav>
 
