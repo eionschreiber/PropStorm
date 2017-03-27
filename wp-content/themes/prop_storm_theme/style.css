@@ -68,7 +68,15 @@ h6, .h6 {
 
 .propstorm-nav{
   text-align: center;
+  font-size: 1.4em;
+  border-color: black;
+  border-bottom: solid 4px;
+  border-top: solid 4px;
 }
+.propstorm-nav li{
+  padding: .8rem;
+}
+
 .propstorm-navbar{
   height: 100%;
   text-align: center;
