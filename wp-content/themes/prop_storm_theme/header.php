@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Prop Storm portfolio website">
     <meta name="author" content="Eion Schreiber">
+    <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -31,7 +32,7 @@
     </div>
   </nav>
 
-<div class="col-sm-9 content-area" style="background-color:#999";>
+<div class="col-sm-9 propstorm-content-area";>
 
     <div class="blog-header">
         <h1 class="blog-title"><a href="<?php bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
