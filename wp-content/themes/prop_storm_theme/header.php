@@ -30,6 +30,26 @@
           'menu_class' => 'nav nav-pills nav-stacked propstorm-nav') );
         ?>
     </div>
+    <?php
+     $files = glob("wp-content/uploads/2017/03/*-icon-*");
+     for ($i=1; $i<count($files); $i++)
+      {
+        $image = $files[$i];
+        $supported_file = array(
+                'gif',
+                'jpg',
+                'jpeg',
+                'png'
+         );
+         $ext = strtolower(pathinfo($image, PATHINFO_EXTENSION));
+         if (in_array($ext, $supported_file)) {
+             echo '<img src="'.$image .'" alt="Random image", class="social-icon" />';
+            } else {
+                continue;
+            }
+          }
+       ?>
+
   </nav>
 
 <div class="col-sm-9 propstorm-content-area";>
