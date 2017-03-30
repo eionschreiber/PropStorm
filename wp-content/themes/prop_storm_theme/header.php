@@ -31,7 +31,7 @@
         ?>
     </div>
     <?php
-     $files = glob("wp-content/uploads/2017/03/*-icon-*");
+     $files = glob("wp-content/uploads/2017/03/*-icon*");
      for ($i=1; $i<count($files); $i++)
       {
         $image = $files[$i];
@@ -49,6 +49,8 @@
             }
           }
        ?>
+       <br>
+       <p id="site-creator">Site created by:<br><a href="http://www.eionschreiber.com/" target="_blank">Eion Schreiber</a></p>
 
   </nav>
 
