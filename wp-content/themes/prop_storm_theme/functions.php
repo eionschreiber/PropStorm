@@ -29,10 +29,15 @@ function theme_logo_setup() {
 
 }
 
+function propstorm_register_theme_customizer($wp_customize){
+  var_dump($wp_customize);
+}
+
 add_action( 'after_setup_theme', 'theme_logo_setup' );
 add_action( 'after_setup_theme', 'propstorm_wp_setup' );
 add_action( 'wp_enqueue_scripts', 'propstorm_enqueue_styles' );
 add_action( 'wp_enqueue_scripts', 'propstorm_enqueue_scripts' );
 add_action( 'init', 'register_propstorm_menu' );
+add_action( 'customize_register', 'propstorm_register_theme_customizer');
 
 ?>

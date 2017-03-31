@@ -43,7 +43,7 @@
          );
          $ext = strtolower(pathinfo($image, PATHINFO_EXTENSION));
          if (in_array($ext, $supported_file)) {
-             echo '<img src="'.$image .'" alt="Random image", class="social-icon" />';
+             echo '<img src="'.$image .'" alt="Social Media Icon", class="social-icon" />';
             } else {
                 continue;
             }
@@ -55,8 +55,3 @@
   </nav>
 
 <div class="col-sm-9 propstorm-content-area";>
-
-    <div class="blog-header">
-        <h1 class="blog-title"><a href="<?php bloginfo( 'wpurl' );?>"><?php echo get_bloginfo( 'name' ); ?></a></h1>
-        <p class="lead blog-description"><?php echo get_bloginfo( 'description' ); ?></p>
-    </div>
